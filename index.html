@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart M-Air Ervaringen</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f6f8;
+            color: #333;
+        }
+
+        /* HERO */
+        .hero {
+            background-image: url('https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 320px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.6);
+        }
+
+        .hero-content {
+            position: relative;
+            color: white;
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            margin: 0;
+            font-size: 2.4em;
+        }
+
+        .hero p {
+            margin-top: 10px;
+            font-size: 1.1em;
+        }
+
+        /* NAV */
+        nav {
+            background: #1f2a36;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        /* CONTAINER */
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* CARDS */
+        .card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #1f2a36;
+        }
+
+        /* REVIEWS */
+        .review {
+            border-left: 4px solid #0077cc;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            background: #fafafa;
+        }
+
+        .tag {
+            font-weight: bold;
+            color: #0077cc;
+        }
+
+        /* FORM */
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background: #0077cc;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #005fa3;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 12px;
+            color: #777;
+        }
+
+        .note {
+            font-size: 13px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<header class="hero">
+    <div class="hero-content">
+        <h1>Smart M-Air Ervaringen</h1>
+        <p>Onafhankelijke gebruikerservaringen met Mitsubishi Heavy Industries wifi-bediening</p>
+    </div>
+</header>
+
+<!-- NAV -->
+<nav>
+    <a href="#info">Info</a>
+    <a href="#problemen">Problemen</a>
+    <a href="#ervaringen">Ervaringen</a>
+    <a href="#delen">Deel ervaring</a>
+</nav>
+
+<div class="container">
+
+    <!-- INFO -->
+    <div class="card" id="info">
+        <h2>Waarom deze website?</h2>
+        <p>
+            Deze website verzamelt gebruikerservaringen met de Smart M-Air app
+            voor Mitsubishi Heavy Industries airconditioners.
+        </p>
+        <p>
+            Doel: transparantie bieden over prestaties, betrouwbaarheid en alternatieven.
+        </p>
+    </div>
+
+    <!-- PROBLEMEN -->
+    <div class="card" id="problemen">
+        <h2>Veelvoorkomende problemen</h2>
+        <ul>
+            <li>Trage app-reactie (30–120 seconden)</li>
+            <li>Verbindingsfouten en time-outs</li>
+            <li>Regelmatig opnieuw moeten inloggen</li>
+            <li>Geen of vertraagde statusupdates</li>
+            <li>Opdrachten worden niet altijd uitgevoerd</li>
+        </ul>
+    </div>
+
+    <!-- ERVARINGEN -->
+    <div class="card" id="ervaringen">
+        <h2>Gebruikerservaringen wereldwijd</h2>
+
+        <div class="review">
+            <span class="tag">NL</span> – App reageert vaak pas na een minuut of langer.
+        </div>
+
+        <div class="review">
+            <span class="tag">UK</span> – Worst smart home app I’ve ever used.
+        </div>
+
+        <div class="review">
+            <span class="tag">DE</span> – Sehr langsam und unzuverlässig im Alltag.
+        </div>
+
+        <div class="review">
+            <span class="tag">US</span> – Works sometimes, but mostly delays or errors.
+        </div>
+
+        <div class="review">
+            <span class="tag">FR</span> – Application très lente et instable.
+        </div>
+
+        <p class="note">
+            Ervaringen zijn gebaseerd op gebruikersfeedback en openbare reviews.
+        </p>
+    </div>
+
+    <!-- OPLOSSINGEN -->
+    <div class="card">
+        <h2>Mogelijke alternatieven</h2>
+        <ul>
+            <li>Intesis wifi-modules (volgens installateurs stabieler)</li>
+            <li>Home Assistant integratie (technisch, vereist extra hardware)</li>
+            <li>Lokale afstandsbediening zonder cloud</li>
+        </ul>
+    </div>
+
+    <!-- FORM -->
+    <div class="card" id="delen">
+        <h2>Deel jouw ervaring</h2>
+
+        <form>
+            <label>Land</label>
+            <input type="text" placeholder="NL / UK / DE / ...">
+
+            <label>Ervaring</label>
+            <textarea rows="5" placeholder="Beschrijf jouw ervaring..."></textarea>
+
+            <button type="button">Versturen (demo)</button>
+        </form>
+
+        <p class="note">
+            * Dit is een demo-formulier. Later kun je dit koppelen aan een database of e-mail.
+        </p>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Smart M-Air Ervaringen – Onafhankelijke gebruikerssite
+</footer>
+
+</body>
+</html>
