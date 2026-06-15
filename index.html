@@ -1,249 +1,435 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart M-Air Ervaringen</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #f4f6f8;
-            color: #333;
-        }
+<title>Smart M-Air Ervaringen | Onafhankelijke gebruikerssite</title>
 
-        /* HERO */
-        .hero {
-            background-image: url('https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&w=1600&q=80');
-            background-size: cover;
-            background-position: center;
-            height: 320px;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-        .hero::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0,0,0,0.6);
-        }
+<style>
 
-        .hero-content {
-            position: relative;
-            color: white;
-            max-width: 800px;
-            padding: 20px;
-        }
+:root{
+--primary:#0f172a;
+--secondary:#1e293b;
+--accent:#2563eb;
+--light:#f8fafc;
+--border:#e2e8f0;
+}
 
-        .hero h1 {
-            margin: 0;
-            font-size: 2.4em;
-        }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
-        .hero p {
-            margin-top: 10px;
-            font-size: 1.1em;
-        }
+body{
+font-family:'Inter',sans-serif;
+background:#f1f5f9;
+color:#1e293b;
+line-height:1.7;
+}
 
-        /* NAV */
-        nav {
-            background: #1f2a36;
-            padding: 10px;
-            text-align: center;
-        }
+.hero{
+height:600px;
+background:
+linear-gradient(rgba(15,23,42,.8),rgba(15,23,42,.8)),
+url("https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1600&q=80");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:40px;
+}
 
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-size: 14px;
-        }
+.hero-content{
+max-width:900px;
+color:white;
+}
 
-        /* CONTAINER */
-        .container {
-            max-width: 1000px;
-            margin: auto;
-            padding: 20px;
-        }
+.hero h1{
+font-size:4rem;
+margin-bottom:20px;
+}
 
-        /* CARDS */
-        .card {
-            background: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-        }
+.hero p{
+font-size:1.3rem;
+opacity:.9;
+margin-bottom:35px;
+}
 
-        h2 {
-            margin-top: 0;
-            color: #1f2a36;
-        }
+.btn{
+display:inline-block;
+padding:14px 26px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+margin:10px;
+}
 
-        /* REVIEWS */
-        .review {
-            border-left: 4px solid #0077cc;
-            padding: 10px 15px;
-            margin-bottom: 10px;
-            background: #fafafa;
-        }
+.btn-primary{
+background:#2563eb;
+color:white;
+}
 
-        .tag {
-            font-weight: bold;
-            color: #0077cc;
-        }
+.btn-secondary{
+border:1px solid white;
+color:white;
+}
 
-        /* FORM */
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
+.stats{
+max-width:1200px;
+margin:-70px auto 60px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+padding:0 20px;
+}
 
-        button {
-            background: #0077cc;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+.stat{
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 5px 25px rgba(0,0,0,.08);
+text-align:center;
+}
 
-        button:hover {
-            background: #005fa3;
-        }
+.stat h2{
+font-size:2.6rem;
+color:#2563eb;
+}
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            font-size: 12px;
-            color: #777;
-        }
+.container{
+max-width:1200px;
+margin:auto;
+padding:0 20px;
+}
 
-        .note {
-            font-size: 13px;
-            color: #666;
-        }
-    </style>
+.card{
+background:white;
+padding:35px;
+border-radius:12px;
+margin-bottom:25px;
+box-shadow:0 4px 15px rgba(0,0,0,.05);
+}
+
+h2{
+margin-bottom:20px;
+font-size:2rem;
+color:#0f172a;
+}
+
+.problem-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.problem{
+padding:20px;
+border:1px solid var(--border);
+border-radius:10px;
+background:#fafafa;
+}
+
+.review-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:20px;
+}
+
+.review{
+border:1px solid var(--border);
+padding:20px;
+border-radius:10px;
+}
+
+.stars{
+color:#f59e0b;
+font-size:20px;
+margin-bottom:10px;
+}
+
+.country{
+font-weight:600;
+color:#2563eb;
+margin-bottom:10px;
+}
+
+.timeline{
+border-left:3px solid #2563eb;
+padding-left:25px;
+margin-top:20px;
+}
+
+.timeline-item{
+margin-bottom:25px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+td{
+padding:12px;
+border:1px solid #ddd;
+}
+
+tr:nth-child(even){
+background:#f8fafc;
+}
+
+footer{
+background:#0f172a;
+color:white;
+padding:50px;
+margin-top:50px;
+text-align:center;
+}
+
+@media(max-width:768px){
+
+.hero{
+height:auto;
+padding:80px 20px;
+}
+
+.hero h1{
+font-size:2.5rem;
+}
+
+}
+
+</style>
+
 </head>
 
 <body>
 
-<!-- HERO -->
 <header class="hero">
-    <div class="hero-content">
-        <h1>Smart M-Air Ervaringen</h1>
-        <p>Onafhankelijke gebruikerservaringen met Mitsubishi Heavy Industries wifi-bediening</p>
-    </div>
+
+<div class="hero-content">
+
+<h1>Smart M-Air Ervaringen</h1>
+
+<p>
+Onafhankelijke verzameling van gebruikerservaringen, reviews,
+bekende problemen en alternatieve oplossingen voor de Smart M-Air app.
+</p>
+
+<a href="#reviews" class="btn btn-primary">Lees ervaringen</a>
+
+<a href="#waarom" class="btn btn-secondary">Waarom deze website?</a>
+
+</div>
+
 </header>
 
-<!-- NAV -->
-<nav>
-    <a href="#info">Info</a>
-    <a href="#problemen">Problemen</a>
-    <a href="#ervaringen">Ervaringen</a>
-    <a href="#delen">Deel ervaring</a>
-</nav>
+<section class="stats">
+
+<div class="stat">
+<h2>853+</h2>
+<p>App Store reviews</p>
+</div>
+
+<div class="stat">
+<h2>1.4/5</h2>
+<p>Gemiddelde beoordeling</p>
+</div>
+
+<div class="stat">
+<h2>27+</h2>
+<p>Landen</p>
+</div>
+
+<div class="stat">
+<h2>6+</h2>
+<p>Jaar klachten</p>
+</div>
+
+</section>
 
 <div class="container">
 
-    <!-- INFO -->
-    <div class="card" id="info">
-        <h2>Waarom deze website?</h2>
-        <p>
-            Deze website verzamelt gebruikerservaringen met de Smart M-Air app
-            voor Mitsubishi Heavy Industries airconditioners.
-        </p>
-        <p>
-            Doel: transparantie bieden over prestaties, betrouwbaarheid en alternatieven.
-        </p>
-    </div>
+<section class="card" id="waarom">
 
-    <!-- PROBLEMEN -->
-    <div class="card" id="problemen">
-        <h2>Veelvoorkomende problemen</h2>
-        <ul>
-            <li>Trage app-reactie (30–120 seconden)</li>
-            <li>Verbindingsfouten en time-outs</li>
-            <li>Regelmatig opnieuw moeten inloggen</li>
-            <li>Geen of vertraagde statusupdates</li>
-            <li>Opdrachten worden niet altijd uitgevoerd</li>
-        </ul>
-    </div>
+<h2>Waarom deze website?</h2>
 
-    <!-- ERVARINGEN -->
-    <div class="card" id="ervaringen">
-        <h2>Gebruikerservaringen wereldwijd</h2>
+<p>
+Deze website is ontstaan nadat ik maandenlang problemen heb ervaren met de Smart M-Air wifi-functionaliteit van mijn Mitsubishi Heavy Industries airconditioners.
+</p>
 
-        <div class="review">
-            <span class="tag">NL</span> – App reageert vaak pas na een minuut of langer.
-        </div>
+<p>
+Tijdens het zoeken naar een oplossing ontdekte ik dat duizenden gebruikers wereldwijd vergelijkbare ervaringen rapporteren:
+trage reacties, foutmeldingen, time-outs, wegvallende verbindingen en een algemeen gebrek aan betrouwbaarheid.
+</p>
 
-        <div class="review">
-            <span class="tag">UK</span> – Worst smart home app I’ve ever used.
-        </div>
+<p>
+Het doel van deze website is niet om een fabrikant of installateur aan te vallen, maar om gebruikers te informeren en ervaringen te verzamelen zodat consumenten beter geïnformeerd een keuze kunnen maken.
+</p>
 
-        <div class="review">
-            <span class="tag">DE</span> – Sehr langsam und unzuverlässig im Alltag.
-        </div>
+</section>
 
-        <div class="review">
-            <span class="tag">US</span> – Works sometimes, but mostly delays or errors.
-        </div>
+<section class="card">
 
-        <div class="review">
-            <span class="tag">FR</span> – Application très lente et instable.
-        </div>
+<h2>Veelvoorkomende problemen</h2>
 
-        <p class="note">
-            Ervaringen zijn gebaseerd op gebruikersfeedback en openbare reviews.
-        </p>
-    </div>
+<div class="problem-grid">
 
-    <!-- OPLOSSINGEN -->
-    <div class="card">
-        <h2>Mogelijke alternatieven</h2>
-        <ul>
-            <li>Intesis wifi-modules (volgens installateurs stabieler)</li>
-            <li>Home Assistant integratie (technisch, vereist extra hardware)</li>
-            <li>Lokale afstandsbediening zonder cloud</li>
-        </ul>
-    </div>
+<div class="problem">
+<h3>⏳ Trage bediening</h3>
+<p>Reactietijden van tientallen seconden tot minuten.</p>
+</div>
 
-    <!-- FORM -->
-    <div class="card" id="delen">
-        <h2>Deel jouw ervaring</h2>
+<div class="problem">
+<h3>☁️ Cloud afhankelijkheid</h3>
+<p>Alle communicatie verloopt via externe servers.</p>
+</div>
 
-        <form>
-            <label>Land</label>
-            <input type="text" placeholder="NL / UK / DE / ...">
+<div class="problem">
+<h3>❌ Foutmeldingen</h3>
+<p>Opdrachten worden niet altijd uitgevoerd.</p>
+</div>
 
-            <label>Ervaring</label>
-            <textarea rows="5" placeholder="Beschrijf jouw ervaring..."></textarea>
+<div class="problem">
+<h3>🔐 Inlogproblemen</h3>
+<p>Gebruikers moeten regelmatig opnieuw inloggen.</p>
+</div>
 
-            <button type="button">Versturen (demo)</button>
-        </form>
+</div>
 
-        <p class="note">
-            * Dit is een demo-formulier. Later kun je dit koppelen aan een database of e-mail.
-        </p>
-    </div>
+</section>
+
+<section class="card" id="reviews">
+
+<h2>Gebruikerservaringen wereldwijd</h2>
+
+<div class="review-grid">
+
+<div class="review">
+<div class="stars">★☆☆☆☆</div>
+<div class="country">Nederland</div>
+Het duurt regelmatig meer dan een minuut voordat een opdracht wordt uitgevoerd.
+</div>
+
+<div class="review">
+<div class="stars">★☆☆☆☆</div>
+<div class="country">Verenigd Koninkrijk</div>
+Worst smart home app I have ever used.
+</div>
+
+<div class="review">
+<div class="stars">★★☆☆☆</div>
+<div class="country">Duitsland</div>
+Sehr langsam und unzuverlässig im Alltag.
+</div>
+
+</div>
+
+</section>
+
+<section class="card">
+
+<h2>Ontwikkeling door de jaren heen</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<strong>2019</strong><br>
+Eerste meldingen van verbindingsproblemen.
+</div>
+
+<div class="timeline-item">
+<strong>2021</strong><br>
+Toename van klachten over trage cloudverbindingen.
+</div>
+
+<div class="timeline-item">
+<strong>2024</strong><br>
+Gebruikers blijven problemen melden.
+</div>
+
+<div class="timeline-item">
+<strong>2026</strong><br>
+Nieuwe meldingen van vertragingen en foutmeldingen.
+</div>
+
+</div>
+
+</section>
+
+<section class="card">
+
+<h2>Mijn persoonlijke casus</h2>
+
+<table>
+
+<tr>
+<td><strong>Installatie</strong></td>
+<td>3 binnenunits</td>
+</tr>
+
+<tr>
+<td><strong>Wifi-netwerk</strong></td>
+<td>Eigen 2.4 GHz netwerk met sterk signaal</td>
+</tr>
+
+<tr>
+<td><strong>Uitgevoerde tests</strong></td>
+<td>Accounts opnieuw aangemaakt, apps verwijderd, netwerk vervangen</td>
+</tr>
+
+<tr>
+<td><strong>Resultaat</strong></td>
+<td>Geen structurele verbetering</td>
+</tr>
+
+</table>
+
+</section>
+
+<section class="card">
+
+<h2>Alternatieven</h2>
+
+<ul>
+<li>Intesis wifi-modules</li>
+<li>Home Assistant integratie</li>
+<li>Lokale bediening via afstandsbediening</li>
+</ul>
+
+</section>
+
+<section class="card">
+
+<h2>Deel jouw ervaring</h2>
+
+<p>
+Heb jij ervaring met Smart M-Air?
+Help andere gebruikers door jouw ervaring te delen.
+</p>
+
+<a href="#" class="btn btn-primary">Review insturen</a>
+
+</section>
 
 </div>
 
 <footer>
-    © 2026 Smart M-Air Ervaringen – Onafhankelijke gebruikerssite
+
+<p>
+Deze website is een onafhankelijk initiatief van gebruikers en is niet verbonden aan Mitsubishi Heavy Industries, Smart M-Air of een installateur.
+</p>
+
+<p>
+© 2026 Smart M-Air Ervaringen
+</p>
+
 </footer>
 
 </body>
