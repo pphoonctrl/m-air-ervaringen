@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Smart M-Air Erfahrungen | Unabhängige Nutzerplattform</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+--primary:#0f172a;
+--secondary:#1e293b;
+--accent:#FFA500;
+--light:#f8fafc;
+--border:#e2e8f0;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:#f1f5f9;
+color:#1e293b;
+line-height:1.7;
+}
+
+.language-switcher {
+  background: #0f172a;
+  text-align: right;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-bottom: 1px solid #1e293b;
+}
+.language-switcher a {
+  color: white;
+  text-decoration: none;
+  margin: 0 5px;
+  font-weight: 500;
+}
+.language-switcher a:hover {
+  color: #FFA500;
+}
+
+.hero{
+height:600px;
+background:
+linear-gradient(rgba(15,23,42,.8),rgba(15,23,42,.8)),
+url("https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1600&q=80");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:40px;
+}
+
+.hero-content{
+max-width:900px;
+color:white;
+}
+
+.hero h1{
+font-size:4rem;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:1.3rem;
+opacity:.9;
+margin-bottom:35px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 26px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+margin:10px;
+}
+
+.btn-primary{
+background:#FFA500;
+color:white;
+border: 1px solid #FFA500;
+text-transform: uppercase;
+cursor: pointer;
+transition: all 0.2s ease-in;
+}
+
+.btn-primary:hover {
+  opacity: 0.85;
+}
+
+.btn-secondary{
+border:1px solid white;
+color:white;
+}
+
+.stats{
+max-width:1200px;
+margin:-70px auto 60px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+padding:0 20px;
+}
+
+.stat{
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 5px 25px rgba(0,0,0,.08);
+text-align:center;
+}
+
+.stat h2{
+font-size:2.6rem;
+color:#2563eb;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:0 20px;
+}
+
+.card{
+background:white;
+padding:35px;
+border-radius:12px;
+margin-bottom:25px;
+box-shadow:0 4px 15px rgba(0,0,0,.05);
+}
+
+h2{
+margin-bottom:20px;
+font-size:2rem;
+color:#0f172a;
+}
+
+.problem-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.problem{
+padding:20px;
+border:1px solid var(--border);
+border-radius:10px;
+background:#fafafa;
+}
+
+.review-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:20px;
+}
+
+.review{
+border:1px solid var(--border);
+padding:20px;
+border-radius:10px;
+}
+
+.stars{
+color:#f59e0b;
+font-size:20px;
+margin-bottom:10px;
+}
+
+.country{
+font-weight:600;
+color:#2563eb;
+margin-bottom:10px;
+}
+
+.timeline{
+border-left:3px solid #2563eb;
+padding-left:25px;
+margin-top:20px;
+}
+
+.timeline-item{
+margin-bottom:25px;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+td{
+padding:12px;
+border:1px solid #ddd;
+}
+
+tr:nth-child(even){
+background:#f8fafc;
+}
+
+footer{
+background:#0f172a;
+color:white;
+padding:50px;
+margin-top:50px;
+text-align:center;
+}
+
+@media(max-width:768px){
+.hero{
+height:auto;
+padding:80px 20px;
+}
+.hero h1{
+font-size:2.5rem;
+}
+}
+
+
+
+.review-screenshots img{
+    width:250px;
+    height:auto;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+/* Specifieke styling alleen voor de Google Play Store screenshots */
+.playstore-screenshots img {
+    width: 500px; /* Alleen deze screenshots worden nu een stuk groter */
+    max-width: 100%; 
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.1);
+    margin: 10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="language-switcher">
+  <a href="index.html">🇳🇱 NL</a> | 
+  <a href="en.html">🇬🇧 EN</a> | 
+  <a href="de.html">🇩🇪 DE</a>
+</div>
+
+<header class="hero">
+<div class="hero-content">
+<h1>Smart M-Air Erfahrungen</h1>
+<p>
+Unabhängige Sammlung von Nutzererfahrungen, Bewertungen, bekannten Problemen und alternativen Lösungen für die Smart M-Air App.
+</p>
+<a href="#reviews" class="btn btn-primary">Erfahrungen lesen</a>
+<a href="#warum" class="btn btn-secondary">Warum diese Website?</a>
+</div>
+</header>
+
+<section class="stats">
+<div class="stat">
+<h2>866</h2>
+<p>App Store Bewertungen (Niederlande)</p>
+</div>
+<div class="stat">
+<h2>1.4/5</h2>
+<p>App Store Score (Niederlande)</p>
+</div>
+<div class="stat">
+<h2>1.672</h2>
+<p>Google Play Bewertungen (Weltweit)</p>
+</div>
+<div class="stat">
+<h2>1.0/5</h2>
+<p>Google Play Score (Weltweit)</p>
+</div>
+</section>
+
+<div class="container">
+
+<section class="card" id="warum">
+<h2>Warum diese Website?</h2>
+<p>
+Diese Website entstand, nachdem ich monatelang vergeblich versucht habe, die Smart M-Air App von Mitsubishi Heavy Industries zuverlässig zum Laufen zu bringen.
+</p>
+<p>
+In den letzten Monaten habe ich mehr als 100 Stunden mit Recherchen, Tests, Konfigurationen und sogar dem kompletten Austausch meines Heimnetzwerks verbracht. Trotz all dieser Bemühungen traten immer wieder dieselben Probleme auf.
+</p>
+<br>
+<p>
+Bei meiner Suche habe ich festgestellt, dass ich keineswegs allein bin. Weltweit berichten Nutzer seit Jahren über ähnliche Probleme, die von trägen Reaktionszeiten und Verbindungsfehlern bis hin zu Login-Problemen und verschwindenden Geräten reichen.
+</p>
+<br>
+<p>
+Mit dieser Website möchte ich Nutzererfahrungen aus Deutschland, den Niederlanden und aller Welt bündeln, damit Verbraucher besser informiert sind und Händler sowie Hersteller zu strukturellen Verbesserungen angeregt werden.
+</p>
+</section>
+
+<section class="card">
+<h2>Häufige Probleme</h2>
+<div class="problem-grid">
+<div class="problem">
+<h3>Träge Bedienung</h3>
+<p>Reaktionszeiten von vielen Sekunden bis hin zu Minuten.</p>
+</div>
+<div class="problem">
+<h3>Cloud-Abhängigkeit</h3>
+<p>Die gesamte Kommunikation läuft über externe Server.</p>
+</div>
+<div class="problem">
+<h3>Fehlermeldungen</h3>
+<p>Befehle werden nicht immer erfolgreich ausgeführt.</p>
+</div>
+<div class="problem">
+<h3>Login-Probleme</h3>
+<p>Nutzer müssen sich regelmäßig neu anmelden.</p>
+</div>
+</div>
+</section>
+
+<section class="card" id="reviews">
+<h2>Nutzererfahrungen weltweit</h2>
+<div class="review-grid">
+<div class="review">
+<div class="stars">★☆☆☆☆</div>
+<div class="country">Niederlande</div>
+Es dauert regelmäßig länger als eine Minute, bis ein Befehl ausgeführt wird.
+</div>
+<div class="review">
+<div class="stars">★☆☆☆☆</div>
+<div class="country">Großbritannien</div>
+Worst smart home app I have ever used.
+</div>
+<div class="review">
+<div class="stars">★★☆☆☆</div>
+<div class="country">Deutschland</div>
+Sehr langsam und unzuverlässig im Alltag.
+</div>
+</div>
+</section>
+
+<section class="card">
+<h2>Aktuelle App Store Bewertungen (Mai 2026)</h2>
+<p>
+Die folgenden Screenshots zeigen eine Auswahl aktueller Bewertungen aus dem Apple App Store, die die wiederkehrenden Beschwerden über Geschwindigkeit und Serverfehler verdeutlichen.
+</p>
+<div class="review-screenshots">
+<img src="reviews-1.jpg" alt="Smart M-Air App Store reviews">
+<img src="reviews-2.jpg" alt="Smart M-Air App Store reviews">
+<img src="reviews-3.jpg" alt="Smart M-Air App Store reviews">
+<img src="reviews-4.jpg" alt="Smart M-Air App Store reviews">
+</div>
+</section>
+
+<section class="card">
+<h2>Aktuelle Google Play Store Bewertungen (Mai / Juni 2026)</h2>
+<p>
+Der Google Play Store zeigt für Android-Nutzer ein identisches Bild. Die Qualität der Klimaanlagen (Hardware) wird gelobt, aber die offizielle Smart M-Air App wird scharf kritisiert.
+</p>
+
+<br>
+
+<div class="playstore-screenshots">
+
+  <img src="foto1.png" alt="Smart M-Air Google Play Store review Ron en Tom">
+  <img src="foto2.png" alt="Smart M-Air Google Play Store review Wim en Marti">
+  <img src="foto3.png" alt="Smart M-Air Google Play Store review André en DS">
+  <img src="foto4.png" alt="Smart M-Air Google Play Store review Mark">
+
+</div>
+</section>
+
+<section class="card" id="analyse">
+<h2>Analyse der Smart M-Air Erfahrungen</h2>
+<p>
+Diese Seite bündelt öffentliche Nutzererfahrungen und Forendiskussionen zur Smart M-Air App. Ziel ist es, wiederkehrende Muster strukturiert darzustellen.
+</p>
+<br>
+<h3>Häufig genannte Probleme</h3>
+<div class="problem-grid">
+<div class="problem">
+<h3>Verbindungsabbrüche</h3>
+<p>Viele Nutzer berichten, dass die Klimaanlage regelmäßig die Verbindung verliert ("Keine Kommunikation").</p>
+</div>
+<div class="problem">
+<h3>Login-Fehler</h3>
+<p>Ein ständiges Problem ist das unerwartete Abmelden oder der Verlust gekoppelter Geräte.</p>
+</div>
+<div class="problem">
+<h3>Träge Cloud-Reaktion</h3>
+<p>Befehle über die App werden oft stark verzögert oder gar nicht ausgeführt.</p>
+</div>
+<div class="problem">
+<h3>Multi-User-Konflikte</h3>
+<p>Bei der Nutzung desselben Kontos durch mehrere Familienmitglieder treten Synchronisationsfehler auf.</p>
+</div>
+</div>
+
+<br>
+<h3>Übersicht externer Quellen</h3>
+<div class="review-grid">
+<div class="review">
+<div class="country">Google Play Store</div>
+<p>Sehr niedrige Durchschnittsbewertung (±1,0/5) basierend auf Tausenden internationalen Rezensionen.</p>
+</div>
+<div class="review">
+<div class="country">Facebook Communities</div>
+<p>Diskussionen über Verbindungsabbrüche und Probleme bei der Nutzung mit mehreren Smartphones.</p>
+</div>
+<div class="review">
+<div class="country">Home Assistant</div>
+<p>Technische Threads über Integrationsprobleme, Firmware-Fehler und Cloud-Abhängigkeit.</p>
+</div>
+<div class="review">
+<div class="country">Homey Community</div>
+<p>Meldungen über instabilen Gerätestatus ("nicht verfügbar") bei Modulen wie WF-RAC.</p>
+</div>
+<div class="review">
+<div class="country">Tweakers.net</div>
+<p>Technische Analysen und Diskussionen über die Architektur und mögliche Smart-Home-Workarounds.</p>
+</div>
+<div class="review">
+<div class="country">Apple App Store</div>
+<p>Niedrige Bewertungen in mehreren Ländern mit strukturellen Performance-Beschwerden.</p>
+</div>
+</div>
+</section>
+
+<section class="card">
+<h2>Entwicklung der Beschwerden über die Jahre</h2>
+<p>
+Ein Blick auf die Foren zeigt: Die Art der Probleme hat sich über die Jahre kaum verändert.
+</p>
+<div class="timeline">
+<div class="timeline-item">
+<strong>2019 – Erste große Beschwerden</strong>
+<ul>
+<li>Probleme bei der WLAN-Registrierung des WF-RAC-Moduls</li>
+<li>Instabile Verbindung mit Routern</li>
+</ul>
+</div>
+<div class="timeline-item">
+<strong>2020 - 2021 – Cloud-Probleme werden sichtbar</strong>
+<ul>
+<li>Verzögerungen bei der Fernbedienung</li>
+<li>Timeouts bei der Ausführung von Befehlen</li>
+</ul>
+</div>
+<div class="timeline-item">
+<strong>2022 - 2023 – Multi-User- & Kontoprobleme</strong>
+<ul>
+<li>Nutzer werden unerwartet ausgeloggt</li>
+<li>Familienmitglieder stören gegenseitig ihre Sitzungen</li>
+</ul>
+</div>
+<div class="timeline-item">
+<strong>2024 - 2025 – Moderne Netzwerke</strong>
+<ul>
+<li>Probleme mit Mesh-Netzwerken und neuen Routern</li>
+<li>Kommunikationsfehler nach offiziellen Firmware-Updates</li>
+</ul>
+</div>
+<div class="timeline-item">
+<strong>2026 – Probleme weiterhin voll aktuell</strong>
+<ul>
+<li>Lange Ladezeiten, verschwindende Geräte und Verbindungs-Timeouts dominieren weiterhin.</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section class="card">
+<h2>Sind die Probleme gelöst?</h2>
+<div class="table-container">
+<table>
+<tr><td><strong>Problem</strong></td><td><strong>Gemeldet seit</strong></td><td><strong>Immer noch sichtbar in 2026</strong></td></tr>
+<tr><td>Träge Bedienung</td><td>2019</td><td>Ja</td></tr>
+<tr><td>Verbindungsprobleme</td><td>2019</td><td>Ja</td></tr>
+<tr><td>Cloud-Verzögerungen</td><td>2020</td><td>Ja</td></tr>
+<tr><td>Erzwungenes Abmelden</td><td>2021</td><td>Ja</td></tr>
+<tr><td>Multi-User-Probleme</td><td>2022</td><td>Ja</td></tr>
+</table>
+</div>
+</section>
+
+<section class="card">
+<h2>Mein persönlicher Fall</h2>
+<div class="table-container">
+<table>
+<tr><td><strong>Installation</strong></td><td>Mitsubishi Heavy Industries Triple-Split (2.0 kW + 2.0 kW + 3.5 kW)</td></tr>
+<tr><td><strong>WLAN-Netzwerk</strong></td><td>Eigenes 2,4-GHz-Netzwerk mit starker Signalstärke</td></tr>
+<tr><td><strong>Durchgeführte Tests</strong></td><td>Apps neu installiert, Nutzung auf nur ein Gerät beschränkt, Heimnetzwerk komplett ersetzt (Asus zu TP-Link BE65), feste IPs zugewiesen, Funktionsvideos für den Händler erstellt.</td></tr>
+<tr><td><strong>Ergebnis</strong></td><td>Keine strukturelle Verbesserung</td></tr>
+</table>
+</div>
+</section>
+
+<section class="card">
+<h2>Probleme mit Smart M-Air? Empfohlene Schritte</h2>
+<p>Wenn Sie anhaltende Probleme haben, befolgen Sie diese Schritte gegenüber Ihrem Händler:</p>
+<div class="steps">
+<div class="step"><h3>Schritt 1 – Problem schriftlich melden</h3><p>Informieren Sie Ihren Installateur oder Händler per E-Mail und fordern Sie eine Lösung. Dokumentieren Sie die Kommunikation.</p></div>
+<div class="step"><h3>Schritt 2 – Frist zur Nachbesserung setzen</h3><p>Geben Sie dem Anbieter eine angemessene Frist, um die Verbindungsprobleme zu untersuchen und zu beheben.</p></div>
+<div class="step"><h3>Schritt 3 – Alles dokumentieren</h3><p>Machen Sie Videos von Fehlern in der App, notieren Sie Daten und sichern Sie Fehlermeldungen.</p></div>
+</div>
+</section>
+
+<section class="card">
+  <h2>Teilen Sie Ihre Erfahrung</h2>
+  <p>Helfen Sie anderen Nutzern, indem Sie Ihre eigenen Erfahrungen mit der Smart M-Air App teilen.</p>
+  <a class="btn btn-primary lightbox-261664074250050">Erfahrung teilen</a>
+</section>
+
+</div>
+
+<footer>
+<p>Diese Website ist eine unabhängige Initiative von Nutzern und steht in keiner Verbindung zu Mitsubishi Heavy Industries, Smart M-Air oder einem offiziellen Installateur.</p>
+<p>© 2026 Smart M-Air Erfahrungen</p>
+</footer>
+
+</body>
+</html>
